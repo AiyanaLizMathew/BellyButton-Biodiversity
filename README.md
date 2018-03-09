@@ -2,15 +2,15 @@
 
 ![Bacteria by filterforge.com](Images/bacteria_by_filterforgedotcom.jpg)
 
-In this assignment, you will build an interactive dashboard to explore the [Belly Button Biodiversity DataSet](http://robdunnlab.com/projects/belly-button-biodiversity/).
+In this project, we have build an interactive dashboard to explore the [Belly Button Biodiversity DataSet](http://robdunnlab.com/projects/belly-button-biodiversity/).
 
 ## Step 1 - Flask API
 
-Use Flask to design an API for your dataset and to serve the HTML and JavaScript required for your dashboard page. Note: We recommend using the sqlite database file and SQLAlchemy inside of your Flask application code, but you are permitted to read the CSV data directly into Pandas DataFrames for this assignment. You will still need to output the data as JSON in the format specified in the routes below.
+Use Flask to design an API for your dataset and to serve the HTML and JavaScript required for your dashboard page. Note: We recommend using the sqlite database file and SQLAlchemy inside of your Flask application code, but you are permitted to read the CSV data directly into Pandas DataFrames. The data is outputtes as JSON in the format specified in the routes below.
 
-* First, create a template called `index.html` for your dashboard landing page. Use the Bootstrap grid system to create the structure of the dashboard page.
+* First, create a template called `index.html` for the dashboard landing page. Use the Bootstrap grid system to create the structure of the dashboard page.
 
-* Next, create the following routes for your api.
+* Next, create the following routes for api.
 
 ```python
 @app.route("/")
@@ -110,7 +110,7 @@ Use Flask to design an API for your dataset and to serve the HTML and JavaScript
 
 ## Step 2 - Plotly.js
 
-Use Plotly.js to build interactive charts for your dashboard.
+Use Plotly.js to build interactive charts for the dashboard.
 
 * Use the route `/names` to populate a dropdown select element with the list of sample names.
 
@@ -164,11 +164,11 @@ Use Plotly.js to build interactive charts for your dashboard.
 ![Example Dashboard Page](Images/dashboard_part1.png)
 ![Example Dashboard Page](Images/dashboard_part2.png)
 
-* Finally, deploy your Flask app to Heroku.
+* Finally, deploy Flask app to Heroku.
 
 ---
 
-## Optional Challenge Assignment
+## Optional Challenge 
 
 The following task is completely optional
 
@@ -184,7 +184,7 @@ The following task is completely optional
 
 ## Hints
 
-* Use `Plotly.d3.json` to fetch data for all of your api routes
+* Use `Plotly.d3.json` to fetch data for all api routes
 
 * Refer to the [Plotly.js Documentation](https://plot.ly/javascript/) when building the plots
 
@@ -192,6 +192,3 @@ The following task is completely optional
 
 * Use Pandas inside of your Flask routes to help format, filter, or sort the data before converting to JSON
 
-## Copyright
-
-Trilogy Education Services © 2017. All Rights Reserved.
